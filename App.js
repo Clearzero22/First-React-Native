@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import WebView from 'react-native-webview'
-import 
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View ,Image} from 'react-native';
 
 
@@ -18,7 +17,7 @@ export default function App() {
   const [cookies, setCookies] = useState('');
 
   // 异步保存Cookie
-  const saveCookies = async (newCookies: any) => {
+  const saveCookies = async (newCookies) => {
     try {
       await AsyncStorage.setItem('@cookies', newCookies);
     } catch (error) {
