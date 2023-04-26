@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import WebView from 'react-native-webview'
 
-import { StyleSheet, Text, View ,Image} from 'react-native';
-
+import { StyleSheet, Text, View ,Image, Button} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // image resource
 const PlaceholderImage = require('./assets/background-image.png');
